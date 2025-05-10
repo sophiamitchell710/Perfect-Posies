@@ -1,0 +1,180 @@
+/* 
+Name: Sophia Mitchell
+Filename: style.css
+*/
+
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 73px;
+  background-color: #c7b5d8;
+  color: #000000;
+}
+
+header {
+  font-family:serif;
+  background-color: #086832;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #c9ad48;
+}
+
+section {
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2, h3 {
+  color: #086832;
+}
+
+p, label, table {
+  color: #333; 
+}
+
+
+
+img {
+  width: 300px;
+  margin: 10px;
+  border: 3px solid #086832;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #086832;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Style for form elements- interactive  */
+input[type="text"],
+select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 2px solid #086832;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #c9ad48;
+  color: #800020;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #086832;
+  color: white;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+  header, section, footer {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  img {
+    width: 90%;
+  }
+}
+
+/* Style rules to show mobile class and not tab-desk class */
+.tab-desk {
+  width: 100%;
+  text-align: center;
+}
+
+.tab-desk img {
+  width: 100%;  
+  max-width:1800px; 
+  height:auto;
+  border:none;
+}
+
+/* Style for video element */
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*style rules for table & photo -shop page*/
+.product-layout table {
+  width: 68%;
+  border-collapse: collapse;
+}
+
+.product-layout table, .product-layout th, .product-layout td {
+  border: 1px solid #086832;
+  padding: 7px;
+  text-align: left;
+}
+
+.product-layout th {
+  font-size: 21px;
+  background-color: #c9ad48;
+  color: #800020;
+}
+
+.product-layout td {
+  font-size: 17px;
+  background-color: white;
+}
+
+/* Layout for the products / shop section */
+.product-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Photo appear on left */
+.product-photo {
+  max-width: 34%;
+  height: auto;
+  border: none
+}

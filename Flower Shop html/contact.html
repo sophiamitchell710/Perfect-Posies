@@ -1,0 +1,64 @@
+<!--
+Name: Sophia Mitchell
+Filename: contact.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Perfect Posies</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <header>
+    <div class="tab-desk">
+      <a href="files/index.html"><img src="images/banner.jpg" alt="banner"></a>
+    </div>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Reach Out</h2>
+    <form action="mailto:flowers@perfectposies.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label>Preferred Contact Method:</label><br>
+      <input type="radio" id="email" name="contact" value="email">
+      <label for="email">Email</label><br>
+      <input type="radio" id="phone" name="contact" value="phone">
+      <label for="phone">Phone</label><br><br>
+
+      <label>Services Interested In:</label><br>
+      <input type="checkbox" id="weddings" name="service" value="weddings">
+      <label for="weddings">Weddings</label><br>
+      <input type="checkbox" id="events" name="service" value="events">
+      <label for="events">Other Events</label><br><br>
+
+      <label for="budget">Budget Range:</label>
+      <select id="budget" name="budget">
+        <option value="under50">$0 - $50</option>
+        <option value="50to100">$50 - $100</option>
+        <option value="over100">$100+</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <p>email us directly: <a href="mailto:flowers@perfectposies.com">flowers@perfectposies.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; Perfect Posies</p>
+  </footer>
+</body>
+</html>
